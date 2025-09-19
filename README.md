@@ -7,7 +7,7 @@ Works with ChatGPT, Gemini, Claude, Copilot, Perplexity, and any sites you add.<
 
 <hr />
 
-<h2>🔒 Privacy &amp; Permissions</h2>
+<h2> Privacy &amp; Permissions</h2>
 <ul>
   <li>We <strong>do not collect, transmit, or sell</strong> personal data.</li>
   <li>All usage stats and settings are stored <strong>locally in your browser</strong>.</li>
@@ -25,7 +25,7 @@ Works with ChatGPT, Gemini, Claude, Copilot, Perplexity, and any sites you add.<
 
 <hr />
 
-<h2>🚀 How to Use</h2>
+<h2> How to Use</h2>
 <ol>
   <li>Install and pin the extension.</li>
   <li><strong>Track mode</strong>: monitor your AI usage (private, on-device).</li>
@@ -37,7 +37,7 @@ Works with ChatGPT, Gemini, Claude, Copilot, Perplexity, and any sites you add.<
 
 <hr />
 
-<h2>✨ Key Features</h2>
+<h2> Key Features</h2>
 <ul>
   <li><strong>Track mode</strong>: private, local usage tracking of AI sites</li>
   <li><strong>Block mode</strong>: timed focus sessions with a countdown lockout</li>
@@ -48,7 +48,7 @@ Works with ChatGPT, Gemini, Claude, Copilot, Perplexity, and any sites you add.<
 
 <hr />
 
-<h2>📈 Updates &amp; Roadmap</h2>
+<h2> Updates &amp; Roadmap</h2>
 <ul>
   <li>Smarter usage summaries (coming soon)</li>
   <li>Classroom controls (teacher/parent mode)</li>
@@ -57,7 +57,7 @@ Works with ChatGPT, Gemini, Claude, Copilot, Perplexity, and any sites you add.<
 
 <hr />
 
-<h2>⚠️ Disclaimer</h2>
+<h2> Disclaimer</h2>
 <p>This extension is user-configured and provided <strong>“as is.”</strong>
 Not affiliated with OpenAI, Google, Anthropic, Microsoft, or any other mentioned brand.</p>
 
