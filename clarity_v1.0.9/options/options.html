@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>LLM Blocker Options</title></head>
+<body>
+  <h1>LLM Blocker Options</h1>
+  <label>Admin PIN (optional): <input id="pin" type="password" /></label>
+  <p>Allowlist (one pattern per line, e.g. <code>https://*.your-school.edu/*</code>)</p>
+  <textarea id="allowlist" rows="8" cols="60"></textarea><br/>
+  <button id="save">Save</button>
+  <hr/>
+  <h2>Also track these domains (one per line)</h2>
+  <textarea id="tracklist" rows="6"></textarea><br/>
+  <button id="saveTracklist">Save tracking list</button>
+  <hr/>
+  <h2>Import class roster (CSV)</h2>
+  <input id="rosterFile" type="file" accept=".csv"/>
+  <pre id="rosterStatus"></pre>
+  <script src="options.js"></script>
+</body>
+</html>

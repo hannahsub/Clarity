@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Clarity</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="app-header" style="justify-content:flex-start; gap:8px;">
+    <img class="app-icon" src="../assets/icon32.png" alt="Clarity icon" />
+    <h1 class="app-title">Clarity</h1>
+  </header>
+
+  <div id="controls-pane">
+    <!-- Focus session -->
+    <section class="focus">
+      <h2 class="flex-between">
+        Focus session
+        <details class="info-wrap">
+          <summary class="info-btn" aria-label="Which sites are blocked?">ⓘ</summary>
+          <div class="info-tip" role="tooltip">
+            <div class="tip-title">Sites blocked during Focus</div>
+            <div class="tip-line">Built-in: ChatGPT, Gemini, Claude, Copilot, Perplexity, Poe, HuggingFace, Meta.ai, etc.</div>
+            <div class="tip-line">Plus any <b>Custom domains</b> you add.</div>
+      
+            <details style="margin-top:4px;">
+              <summary class="tip-line" style="cursor:pointer; font-weight:bold;">See full list</summary>
+              <div class="tip-line" style="max-height:120px; overflow-y:auto; font-size:12px; line-height:1.35;">
+                chat.openai.com<br>
+                chatgpt.com<br>
+                platform.openai.com<br>
+                api.openai.com<br>
+                gemini.google.com<br>
+                bard.google.com<br>
+                ai.google.dev<br>
+                generativeai.googleapis.com<br>
+                claude.ai<br>
+                api.anthropic.com<br>
+                copilot.microsoft.com<br>
+                www.bing.com<br>
+                perplexity.ai<br>
+                poe.com<br>
+                pi.ai<br>
+                huggingface.co<br>
+                meta.ai<br>
+                grok.x.ai<br>
+                deepseek.com<br>
+                qwenlm.ai<br>
+                tongyi.aliyun.com<br>
+                mistral.ai
+              </div>
+            </details>
+          </div>
+        </details>
+      </h2>
+      <div class="preset-buttons">
+        <button class="chip" data-min="25">25m</button>
+        <button class="chip" data-min="60">60m</button>
+        <button class="chip" data-min="90">90m</button>
+        <button class="chip" data-min="120">2h</button>
+        <button class="chip" data-min="180">3h</button>
+      </div>
+      <div class="custom-time">
+        <input id="focus-minutes" type="number" min="1" max="180" value="25" />
+        <button id="start" class="start-btn">Start</button>
+      </div>
+    </section>
+
+    <!-- Custom domains -->
+    <section class="custom">
+      <h2 class="flex-between">
+        Custom
+        <details class="info-wrap">
+          <summary class="info-btn" aria-label="How custom domains work">ⓘ</summary>
+          <div class="info-tip" role="tooltip">
+            <div class="tip-title">Custom domains (on top of built-in AI sites)</div>
+            <div class="tip-line">• Paste a full URL for host to be extracted automatically</div>
+            <div class="tip-line">• <code>old.reddit.com</code> → blocks old Reddit</div>
+            <div class="tip-line">• <code>reddit.com</code> → blocks all Reddit</div>
+            <div class="tip-line">• Blocks apply during Focus sessions</div>
+            <div class="tip-line">• <b>Save</b> to apply, <b>Reset</b> to clear</div>
+          </div>
+        </details>
+      </h2>
+    
+      <textarea id="custom-domains" rows="2" placeholder="old.reddit.com&#10;reddit.com&#10;another.ai"></textarea>
+      <div style="display:flex; gap:8px; margin-top:6px;">
+        <button id="save" class="save-btn">Save</button>
+        <button id="reset-custom" class="save-btn" title="Clear your custom list">Reset</button>
+      </div>
+    </section>
+
+    <!-- AI Usage -->
+    <section class="usage">
+      <h2 class="usage-title">
+        AI Usage
+        <!-- Click-to-toggle info (no JS needed) -->
+        <details class="info-wrap">
+          <summary class="info-btn" aria-label="How AI Usage is calculated">ⓘ</summary>
+          <div class="info-tip" role="tooltip">
+            <div class="tip-title">How it counts:</div>
+            <div class="tip-line">① Total for the selected period</div>
+            <div class="tip-line">② Daily average over that period</div>
+          </div>
+        </details>
+      </h2>
+
+      <div class="usage-controls">
+        <button data-period="day"   class="chip small">Day</button>
+        <button data-period="week"  class="chip small">Week</button>
+        <button data-period="month" class="chip small">Month</button>
+        <button data-period="year"  class="chip small">Year</button>
+      </div>
+
+      <p id="usage-summary" class="muted"></p>
+      <small id="data-note" class="muted" style="display:none;"></small>
+    </section>
+  </div>
+
+  <!-- Full-screen timer overlay (shown during focus) -->
+  <div id="timer-pane">
+    <div class="timer-remaining" id="timer-remaining">00:00:00</div>
+  </div>
+
+  <!-- Footer (streak) -->
+  <div id="meta" class="meta" aria-live="polite"></div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
