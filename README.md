@@ -1,7 +1,6 @@
 # Clarity
-<h1>Clarity v1.0.9</h1>
 
-<p><strong>Clarity</strong> helps you control your use of AI chat tools by <strong>blocking</strong> and/or <strong>tracking</strong> usage.
+<p><strong>Clarity v.1.0.9 </strong> helps you control your use of AI chat tools by <strong>blocking</strong> and/or <strong>tracking</strong> usage.
 Choose <em>Block</em> for timed focus sessions, <em>Track</em> for private on-device analytics, or use both.
 Works with ChatGPT, Gemini, Claude, Copilot, Perplexity, and any sites you add.</p>
 
