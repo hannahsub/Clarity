@@ -27,8 +27,8 @@ Works with ChatGPT, Gemini, Claude, Copilot, Perplexity, and any sites you add.<
 <h2> How to Use</h2>
 <ol>
   <li>Install and pin the extension.</li>
-  <li><strong>Track mode</strong>: monitor your AI usage (private, on-device).</li>
-  <li><strong>Block mode</strong>: open <em>Focus</em>, set a duration, press <em>Start</em>.
+  <li><strong>Track</strong>: monitor your AI usage (private, on-device).</li>
+  <li><strong>Block</strong>: open <em>Focus</em>, set a duration, press <em>Start</em>.
     The popup becomes a countdown and AI sites stay blocked until time’s up.</li>
   <li>Add extra domains under <strong>Custom</strong> if you want to block more.</li>
   <li>Check <strong>Streaks</strong> to see days installed (resets if uninstalled).</li>
