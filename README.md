@@ -36,22 +36,10 @@ Works with ChatGPT, Gemini, Claude, Copilot, Perplexity, and any sites you add.<
 
 <hr />
 
-<h2> Key Features</h2>
-<ul>
-  <li><strong>Track mode</strong>: private, local usage tracking of AI sites</li>
-  <li><strong>Block mode</strong>: timed focus sessions with a countdown lockout</li>
-  <li><strong>Custom blocklist</strong>: add your own domains</li>
-  <li><strong>Daily streaks</strong>: stay consistent, keep your streak alive</li>
-  <li><strong>One-click start</strong>: minimal popup for quick sessions</li>
-</ul>
-
-<hr />
-
 <h2> Updates &amp; Roadmap</h2>
 <ul>
   <li>Smarter usage summaries (coming soon)</li>
   <li>Classroom controls (teacher/parent mode)</li>
-  <li>Expanded blocklist/report options</li>
 </ul>
 
 <hr />
